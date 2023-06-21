@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+        }
+        .sheep{
+            width: 100%;
+        }
+        .sheep>figure{
+            width: 1200px;
+            height: 600px;
+            margin: 20px auto;
+            
+        }
+        .sheep>figure>img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+        } 
+        .eye1{
+            display: flex;
+            position: absolute;
+            top: 138px;
+            left: 703px;
+        }
+        .eye1>div:nth-of-type(1){
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye1>div:nth-of-type(2){
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye1>div:nth-of-type(1)>div{
+            width: 14px;
+            height: 14px;
+            border-radius: 50px;
+            background-color: black;
+            margin: 6px auto;
+            animation: eye1 10s steps(1) infinite alternate;
+        }
+        .eye1>div:nth-of-type(2)>div{
+            width: 14px;
+            height: 14px;
+            border-radius: 50px;
+            background-color: black;
+            margin: 6px auto;
+            animation: eye1 10s steps(1) infinite alternate;
+        }
+        @keyframes eye1{  
+              0%{transform: translate(5px,0px);}
+              10%{transform: translate(-5px,0px);}
+              20%{transform: translate(0,0px);}
+              30%{transform: translate(5px,0px);}
+              40%{transform: translate(-5px,0px);}
+              50%{transform: translate(5px,5px);}
+              60%{transform: translate(0px,5px);}
+              70%{transform: translate(5px,0px);}
+              80%{transform: translate(0px,0px);}
+              90%{transform: translate(-5px,5px);}
+              100%{transform: translate(0px,5px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye2{
+            display: flex;
+            position: absolute;
+            top: 152px;
+            left: 203px;
+            transform: rotateZ(-10deg);
+        }
+        .eye2>div:nth-of-type(1){
+            width: 19px;
+            height: 17px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235);  
+            
+        }
+        .eye2>div:nth-of-type(2){
+            width: 19px;
+            height: 17px;
+            border-radius: 50px;
+            margin-left: 10px;
+            background-color: rgb(236, 235, 235);  
+        }
+        .eye2>div:nth-of-type(1)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye2 10s steps(1) infinite alternate;
+        }
+        .eye2>div:nth-of-type(2)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye2 10s steps(1) infinite alternate;
+        }
+        @keyframes eye2{  
+              0%{transform: translate(5px,0px);}
+              10%{transform: translate(5px,0px);}
+              20%{transform: translate(0,0px);}
+              30%{transform: translate(5px,0px);}
+              40%{transform: translate(5px,0px);}
+              50%{transform: translate(5px,5px);}
+              60%{transform: translate(0px,5px);}
+              70%{transform: translate(5px,0px);}
+              80%{transform: translate(0px,0px);}
+              90%{transform: translate(5px,5px);}
+              100%{transform: translate(0px,5px);}
+        }
+                /* //////////////////////////////////////////////////////// */
+        .eye3{
+            display: flex;
+            position: absolute;
+            top: 60px;
+            left: 380px;
+            transform: rotateZ(-28deg);
+        }
+        .eye3>div:nth-of-type(1){
+            width: 22px;
+            height: 22px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye3>div:nth-of-type(2){
+            width: 22px;
+            height: 22px;
+            border-radius: 50px;
+            /* margin-left: 10px; */
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye3>div:nth-of-type(1)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye1 10s steps(1) infinite alternate;
+        }
+        .eye3>div:nth-of-type(2)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye3 10s steps(1) infinite alternate;
+        }
+        @keyframes eye3{  
+              0%{transform: translate(6px,0px);}
+              10%{transform: translate(-6px,0px);}
+              20%{transform: translate(0,0px);}
+              30%{transform: translate(6px,0px);}
+              40%{transform: translate(-6px,0px);}
+              50%{transform: translate(6px,6px);}
+              60%{transform: translate(0px,6px);}
+              70%{transform: translate(6px,0px);}
+              80%{transform: translate(0px,0px);}
+              90%{transform: translate(-6px,6px);}
+              100%{transform: translate(0px,6px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye4{
+            display: flex;
+            position: absolute;
+            top: 220px;
+            left: 886px;
+            transform: rotateZ(11deg);
+        }
+        .eye4>div:nth-of-type(1){
+            width: 18px;
+            height: 18px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye4>div:nth-of-type(2){
+            width: 18px;
+            height: 18px;
+            border-radius: 50px;
+            margin-left: 15px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye4>div:nth-of-type(1)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye4 10s steps(1) infinite alternate;
+        }
+        .eye4>div:nth-of-type(2)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye4 10s steps(1) infinite alternate;
+        }
+        @keyframes eye4{  
+              0%{transform: translate(5px,0px);}
+              10%{transform: translate(-5px,0px);}
+              20%{transform: translate(0,0px);}
+              30%{transform: translate(5px,0px);}
+              40%{transform: translate(5px,0px);}
+              50%{transform: translate(-5px,5px);}
+              60%{transform: translate(0px,5px);}
+              70%{transform: translate(-5px,0px);}
+              80%{transform: translate(0px,0px);}
+              90%{transform: translate(5px,5px);}
+              100%{transform: translate(0px,5px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye5{
+            display: flex;
+            position: absolute;
+            top: 165px;
+            left: 960px;
+            transform: rotateZ(18deg);
+        }
+        .eye5>div:nth-of-type(1){
+            width: 18px;
+            height: 18px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye5>div:nth-of-type(2){
+            width: 18px;
+            height: 18px;
+            border-radius: 50px;
+            margin-left: 22px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye5>div:nth-of-type(1)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye5 10s steps(1) infinite alternate;
+        }
+        .eye5>div:nth-of-type(2)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye5 10s steps(1) infinite alternate;
+        }
+        @keyframes eye5{  
+              0%{transform: translate(5px,0px);}
+              10%{transform: translate(-5px,0px);}
+              20%{transform: translate(0,0px);}
+              30%{transform: translate(5px,0px);}
+              40%{transform: translate(5px,0px);}
+              50%{transform: translate(-5px,5px);}
+              60%{transform: translate(0px,5px);}
+              70%{transform: translate(-5px,0px);}
+              80%{transform: translate(0px,0px);}
+              90%{transform: translate(5px,5px);}
+              100%{transform: translate(0px,5px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye6{
+            display: flex;
+            position: absolute;
+            top: 150px;
+            left: 1083px;
+            transform: rotateZ(-11deg);
+        }
+        .eye6>div:nth-of-type(1){
+            width: 22px;
+            height: 22px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye6>div:nth-of-type(2){
+            width: 22px;
+            height: 22px;
+            border-radius: 50px;
+            margin-left: 5px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye6>div:nth-of-type(1)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye6 10s steps(1) infinite alternate;
+        }
+        .eye6>div:nth-of-type(2)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye6 10s steps(1) infinite alternate;
+        }
+        @keyframes eye6{  
+              0%{transform: translate(5px,0px);}
+              10%{transform: translate(5px,0px);}
+              20%{transform: translate(0,0px);}
+              30%{transform: translate(5px,0px);}
+              40%{transform: translate(5px,0px);}
+              50%{transform: translate(5px,-5px);}
+              60%{transform: translate(0px,5px);}
+              70%{transform: translate(5px,0px);}
+              80%{transform: translate(0px,0px);}
+              90%{transform: translate(5px,-5px);}
+              100%{transform: translate(0px,5px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye7{
+            display: flex;
+            position: absolute;
+            top: 275px;
+            left: 982px;
+            transform: rotateZ(-11deg);
+        }
+        .eye7>div:nth-of-type(1){
+            width: 33px;
+            height: 33px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye7>div:nth-of-type(2){
+            width: 33px;
+            height: 33px;
+            border-radius: 50px;
+            margin-left: 5px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye7>div:nth-of-type(1)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye7 10s steps(1) infinite alternate;
+        }
+        .eye7>div:nth-of-type(2)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 6px auto;
+            animation: eye7 10s steps(1) infinite alternate;
+        }
+        @keyframes eye7{  
+              0%{transform: translate(5px,0px);}
+              10%{transform: translate(5px,0px);}
+              20%{transform: translate(0,0px);}
+              30%{transform: translate(5px,0px);}
+              40%{transform: translate(5px,0px);}
+              50%{transform: translate(5px,-5px);}
+              60%{transform: translate(0px,-5px);}
+              70%{transform: translate(5px,0px);}
+              80%{transform: translate(0px,0px);}
+              90%{transform: translate(5px,-5px);}
+              100%{transform: translate(0px,-5px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye8{
+            display: flex;
+            position: absolute;
+            top: 309px;
+            left: 264px;
+            transform: rotateZ(-18deg);
+        }
+        .eye8>div:nth-of-type(1){
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye8>div:nth-of-type(2){
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            margin-left: 7px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye8>div:nth-of-type(1)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 10px auto;
+            animation: eye8 10s steps(1) infinite alternate;
+        }
+        .eye8>div:nth-of-type(2)>div{
+            width: 9px;
+            height: 9px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 10px auto;
+            animation: eye8 10s steps(1) infinite alternate;
+        }
+        @keyframes eye8{  
+              0%{transform: translate(-5px,10px);}
+              10%{transform: translate(5px,10px);}
+              20%{transform: translate(0,10px);}
+              30%{transform: translate(-5px,10px);}
+              40%{transform: translate(5px,10px);}
+              50%{transform: translate(0px,10px);}
+              60%{transform: translate(0px,10px);}
+              70%{transform: translate(-5px,10px);}
+              80%{transform: translate(0px,10px);}
+              90%{transform: translate(0px,10px);}
+              100%{transform: translate(0px,10px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye9{
+            display: flex;
+            position: absolute;
+            top: 116px;
+            left: 614px;
+            transform: rotateZ(-1deg);
+        }
+        .eye9>div:nth-of-type(1){
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye9>div:nth-of-type(2){
+            width: 13px;
+            height: 13px;
+            border-radius: 50px;
+            margin-left: 3px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye9>div:nth-of-type(1)>div{
+            width: 6px;
+            height: 6px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 1px auto;
+            animation: eye9 10s steps(1) infinite alternate;
+        }
+        .eye9>div:nth-of-type(2)>div{
+            width: 6px;
+            height: 6px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 1px auto;
+            animation: eye9 10s steps(1) infinite alternate;
+        }
+        @keyframes eye9{  
+              0%{transform: translate(2px,1px);}
+              10%{transform: translate(-2px,0px);}
+              20%{transform: translate(0,1px);}
+              30%{transform: translate(2px,1px);}
+              40%{transform: translate(2px,1px);}
+              50%{transform: translate(0px,0px);}
+              60%{transform: translate(0px,1px);}
+              70%{transform: translate(2px,2px);}
+              80%{transform: translate(0px,1px);}
+              90%{transform: translate(0px,0px);}
+              100%{transform: translate(2px,0px);}
+        }
+        /* //////////////////////////////////////////////////////// */
+        .eye10{
+            display: flex;
+            position: absolute;
+            top: 422px;
+            left: 1130px;
+            transform: rotateZ(14deg);
+        }
+        .eye10>div:nth-of-type(1){
+            width: 26px;
+            height: 26px;
+            border-radius: 50px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye10>div:nth-of-type(2){
+            width: 26px;
+            height: 26px;
+            border-radius: 50px;
+            margin-left: 13px;
+            background-color: rgb(236, 235, 235); 
+        }
+        .eye10>div:nth-of-type(1)>div{
+            width: 15px;
+            height: 15px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 1px auto;
+            animation: eye10 10s steps(1) infinite alternate;
+        }
+        .eye10>div:nth-of-type(2)>div{
+            width: 15px;
+            height: 15px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+            margin: 1px auto;
+            animation: eye10 10s steps(1) infinite alternate;
+        }
+        @keyframes eye10{  
+              0%{transform: translate(-2px,4px);}
+              10%{transform: translate(-2px,2px);}
+              20%{transform: translate(0,4px);}
+              30%{transform: translate(-2px,4px);}
+              40%{transform: translate(-2px,4px);}
+              50%{transform: translate(0px,2px);}
+              60%{transform: translate(0px,4px);}
+              70%{transform: translate(-2px,2px);}
+              80%{transform: translate(0px,4px);}
+              90%{transform: translate(0px,2px);}
+              100%{transform: translate(-2px,4px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="sheep">
+        <figure><img src="assets/img/1200x600_-shaun_the_sheep.jpg" alt=""></figure>
+        <span class="eye1">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye2">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye3">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye4">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye5">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye6">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye7">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        </span>
+        <span class="eye8">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye9">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+        <span class="eye10">
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </span>
+    </div>
+</body>
+</html>
